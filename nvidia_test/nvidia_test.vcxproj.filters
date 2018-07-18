@@ -39,6 +39,21 @@
     <ClInclude Include="makeSquare.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="numIslands.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="solveBoard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="isHappy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hasCycle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="falttern.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -63,6 +78,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="makeSquare.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="numIslands.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="solveBoard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="isHappy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hasCycle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="flattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

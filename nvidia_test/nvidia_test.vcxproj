@@ -148,8 +148,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="constructRectangle.h" />
+    <ClInclude Include="falttern.h" />
+    <ClInclude Include="hasCycle.h" />
+    <ClInclude Include="isHappy.h" />
     <ClInclude Include="lexical_analyser.h" />
     <ClInclude Include="makeSquare.h" />
+    <ClInclude Include="numIslands.h" />
+    <ClInclude Include="solveBoard.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="test1_nvidia.h" />
@@ -158,9 +163,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="constructRectangle.cpp" />
+    <ClCompile Include="flattern.cpp" />
+    <ClCompile Include="hasCycle.cpp" />
+    <ClCompile Include="isHappy.cpp" />
     <ClCompile Include="lexical_analyser.cpp" />
     <ClCompile Include="makeSquare.cpp" />
+    <ClCompile Include="numIslands.cpp" />
     <ClCompile Include="nvidia_test.cpp" />
+    <ClCompile Include="solveBoard.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
