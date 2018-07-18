@@ -1,4 +1,4 @@
 #pragma once
 #include <vector>
 
-bool makesquare(std::vector<int>& nums);
+bool makeSquare(std::vector<int>& nums);
