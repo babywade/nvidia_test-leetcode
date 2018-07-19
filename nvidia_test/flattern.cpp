@@ -35,7 +35,6 @@ void flatten(TreeNode* root) {
 }
 
 TreeNode* trimBST(TreeNode* root, int L, int R) {
-	//c++里面宏NULL为0，所以此处如果返回NULL最终此处节点为0，应返回nullptr；
 	if (root == nullptr) {
 		return nullptr;
 	}
