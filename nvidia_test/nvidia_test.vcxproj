@@ -147,11 +147,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="binaryWatch.h" />
     <ClInclude Include="constructRectangle.h" />
     <ClInclude Include="falttern.h" />
     <ClInclude Include="hasCycle.h" />
     <ClInclude Include="isHappy.h" />
+    <ClInclude Include="letterCombinations.h" />
+    <ClInclude Include="lexicalOrder.h" />
     <ClInclude Include="lexical_analyser.h" />
+    <ClInclude Include="majorityElement.h" />
     <ClInclude Include="makeSquare.h" />
     <ClInclude Include="numIslands.h" />
     <ClInclude Include="solveBoard.h" />
@@ -160,14 +164,19 @@
     <ClInclude Include="test1_nvidia.h" />
     <ClInclude Include="test2_nvidia.h" />
     <ClInclude Include="test3_nvidia.h" />
+    <ClInclude Include="totalHammingDistance.h" />
     <ClInclude Include="triangleNumber.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="binaryWatch.cpp" />
     <ClCompile Include="constructRectangle.cpp" />
     <ClCompile Include="flattern.cpp" />
     <ClCompile Include="hasCycle.cpp" />
     <ClCompile Include="isHappy.cpp" />
+    <ClCompile Include="letterCombinations.cpp" />
+    <ClCompile Include="lexicalOrder.cpp" />
     <ClCompile Include="lexical_analyser.cpp" />
+    <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="makeSquare.cpp" />
     <ClCompile Include="numIslands.cpp" />
     <ClCompile Include="nvidia_test.cpp" />
@@ -181,6 +190,7 @@
     <ClCompile Include="test1_nvidia.cpp" />
     <ClCompile Include="test2_nvidia.cpp" />
     <ClCompile Include="test3_nvidia.cpp" />
+    <ClCompile Include="totalHammingDistance.cpp" />
     <ClCompile Include="triangleNumber.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

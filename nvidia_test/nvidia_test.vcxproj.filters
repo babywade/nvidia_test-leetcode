@@ -57,6 +57,21 @@
     <ClInclude Include="triangleNumber.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="lexicalOrder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="letterCombinations.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="binaryWatch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="totalHammingDistance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="majorityElement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -99,6 +114,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="triangleNumber.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lexicalOrder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="letterCombinations.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="binaryWatch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="totalHammingDistance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="majorityElement.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
