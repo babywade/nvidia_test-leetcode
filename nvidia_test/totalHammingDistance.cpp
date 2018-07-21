@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "totalHammingDistance.h"
 #include <bitset>
+#include <algorithm>
 
 using namespace std;
 //两两比较O(n2)算法，超时
@@ -35,4 +36,31 @@ int totalHammingDistance02(vector<int>& nums)
 		res += cnt * (nums.size() - cnt);
 	}
 	return res;
+}
+
+void findSecretWord(std::vector<std::string>& wordlist, Master & master)
+{
+	int num = 0;
+	vector<string> temp;
+	for (int z = 0; z < 10; z++) {
+		//为什么这里随机洗牌一次会最终通过，而不洗牌则不能通过？不明白啊，洗牌有用吗
+		random_shuffle(wordlist.begin(), wordlist.end());
+		num = master.guess(wordlist[0]);
+		if (num == 6) {
+			break;
+		}
+		temp.clear();
+		for (int i = 1; i < wordlist.size(); i++) {
+			int cnt = 0;
+			for (int j = 0; j < 6; j++) {
+				if (wordlist[i][j] == wordlist[0][j]) {
+					cnt++;
+				}
+			}
+			if (cnt == num) {
+				temp.push_back(wordlist[i]);
+			}
+		}
+		wordlist = temp;
+	}
 }
