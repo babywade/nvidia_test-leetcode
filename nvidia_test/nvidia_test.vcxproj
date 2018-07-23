@@ -152,6 +152,7 @@
     <ClInclude Include="falttern.h" />
     <ClInclude Include="hasCycle.h" />
     <ClInclude Include="isHappy.h" />
+    <ClInclude Include="isMatch.h" />
     <ClInclude Include="letterCombinations.h" />
     <ClInclude Include="lexicalOrder.h" />
     <ClInclude Include="lexical_analyser.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="flattern.cpp" />
     <ClCompile Include="hasCycle.cpp" />
     <ClCompile Include="isHappy.cpp" />
+    <ClCompile Include="isMatch.cpp" />
     <ClCompile Include="letterCombinations.cpp" />
     <ClCompile Include="lexicalOrder.cpp" />
     <ClCompile Include="lexical_analyser.cpp" />
