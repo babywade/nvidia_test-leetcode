@@ -4,6 +4,8 @@
 #include <algorithm>
 
 using namespace std;
+
+ListNode* mergeTwoLists(ListNode* head1, ListNode* head2);
 //两两比较O(n2)算法，超时
 int totalHammingDistance01(vector<int>& nums)
 {
@@ -45,7 +47,7 @@ void findSecretWord(std::vector<std::string>& wordlist, Master & master)
 	for (int z = 0; z < 10; z++) {
 		//为什么这里随机洗牌一次会最终通过，而不洗牌则不能通过？不明白啊，洗牌有用吗
 		random_shuffle(wordlist.begin(), wordlist.end());
-		num = master.guess(wordlist[0]);
+		//num = master.guess(wordlist[0]);
 		if (num == 6) {
 			break;
 		}
@@ -63,4 +65,74 @@ void findSecretWord(std::vector<std::string>& wordlist, Master & master)
 		}
 		wordlist = temp;
 	}
+}
+
+int canPlaceFlowers(vector<int>& flowerbed, int n)
+{
+
+	return 0;
+}
+//归并排序
+ListNode* sortList(ListNode* head)
+{
+	if (head == nullptr || head->next == nullptr) {
+		return head;
+	}
+	ListNode* p1 = head, *p2 = head->next;
+	while (p2 && p2->next) {
+		p1 = p1->next;
+		p2 = p2->next->next;
+	}
+	p2 = p1->next;
+	p1 = nullptr;
+	return mergeTwoLists(sortList(head), sortList(p2));
+}
+
+ListNode* mergeTwoLists(ListNode* head1, ListNode* head2) {
+	ListNode* p1 = head1, *p2 = head2;
+	ListNode dummy(0);
+	ListNode* tail = &dummy;
+
+	while (p1 && p2) {
+		if (p1->val < p2->val) {
+			tail->next = p1;
+			p1 = p1->next;
+		}
+		else {
+			tail->next = p2;
+			p2 = p2->next;
+		}
+		tail = tail->next;
+	}
+	if (p1) {
+		tail->next = p1;
+	}
+	if (p2) {
+		tail->next = p2;
+	}
+	return dummy.next;
+}
+
+void printList(ListNode* h)
+{
+	while (h != NULL) {
+		printf("%d ", h->val);
+		h = h->next;
+	}
+	printf("\n");
+}
+
+ListNode* createList(vector<int>& a, int n)
+{
+	ListNode *head = NULL, *p = NULL;
+	for (int i = 0; i<n; i++) {
+		if (head == NULL) {
+			head = p = new ListNode(a[i]);
+		}
+		else {
+			p->next = new ListNode(a[i]);
+			p = p->next;
+		}
+	}
+	return head;
 }

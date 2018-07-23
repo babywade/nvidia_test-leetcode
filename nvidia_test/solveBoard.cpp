@@ -5,6 +5,8 @@
 
 using namespace std;
 
+void mergeDFS(vector<vector<char>>& board, int x, int y);
+
 void solve(vector<vector<char>>& board) {
 	if (board.size() == 0 || board[0].size() == 0) {
 		return;
@@ -55,6 +57,7 @@ void mergeDFS(vector<vector<char>>& board, int x, int y) {
 	mergeDFS(board, x, y - 1);
 	mergeDFS(board, x, y + 1);
 }
+
 //凸包中最大三角形面积，此处暴力枚举的复杂度为O(n3),从凸包角度会有更好的算法。
 double largestTriangleArea(vector<vector<int>>& points) {
 	double res = 0;

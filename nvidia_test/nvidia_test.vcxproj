@@ -157,6 +157,7 @@
     <ClInclude Include="lexical_analyser.h" />
     <ClInclude Include="majorityElement.h" />
     <ClInclude Include="makeSquare.h" />
+    <ClInclude Include="maxPrices.h" />
     <ClInclude Include="numIslands.h" />
     <ClInclude Include="solveBoard.h" />
     <ClInclude Include="stdafx.h" />
@@ -178,6 +179,7 @@
     <ClCompile Include="lexical_analyser.cpp" />
     <ClCompile Include="majorityElement.cpp" />
     <ClCompile Include="makeSquare.cpp" />
+    <ClCompile Include="maxPrices.cpp" />
     <ClCompile Include="numIslands.cpp" />
     <ClCompile Include="nvidia_test.cpp" />
     <ClCompile Include="solveBoard.cpp" />

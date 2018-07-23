@@ -3,6 +3,8 @@
 
 using namespace std;
 
+void numIslandsDFS(vector<vector<char>>& grid, vector<vector<bool>>& visited, int x, int y);
+
 int numIslands(vector<vector<char>>& grid) {
 	if (grid.empty() || grid[0].empty()) {
 		return 0;

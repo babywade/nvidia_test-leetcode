@@ -4,6 +4,8 @@
 
 using namespace std;
 
+static bool compare(Interval& lhs, Interval& rhs);
+
 int majorityElement(vector<int>& nums)
 {
 	int majority;

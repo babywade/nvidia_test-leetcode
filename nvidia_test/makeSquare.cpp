@@ -4,6 +4,8 @@
 
 using namespace std;
 
+bool dfs(vector<int>& nums, vector<int>& sums, int pos, int target);
+
 bool makeSquare(vector<int>& nums) {
 	if (nums.empty() || nums.size() < 4) {
 		return false;

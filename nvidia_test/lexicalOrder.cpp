@@ -3,6 +3,9 @@
 #include <algorithm>
 
 using namespace std;
+
+bool myComp(int i, int j);
+void lexicalOrder_helper(int num, int n, vector<int>& res);
 //比较ASCII码即为字典序，strcmp函数比较了ASCII码
 vector<int> lexicalOrder01(int n) {
 	vector<int> res;
@@ -15,8 +18,8 @@ vector<int> lexicalOrder01(int n) {
 
 bool myComp(int i, int j) {
 	char si[32] = { 0 }, sj[32] = { 0 };
-	sprintf(si, "%d\0", i);
-	sprintf(sj, "%d\0", j);
+	sprintf_s(si, "%d\0", i);
+	sprintf_s(sj, "%d\0", j);
 	if (strcmp(si, sj) < 0) {
 		return true;
 	}
