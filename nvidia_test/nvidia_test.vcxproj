@@ -150,6 +150,7 @@
     <ClInclude Include="binaryWatch.h" />
     <ClInclude Include="constructRectangle.h" />
     <ClInclude Include="falttern.h" />
+    <ClInclude Include="firstMissingPositive.h" />
     <ClInclude Include="hasCycle.h" />
     <ClInclude Include="isHappy.h" />
     <ClInclude Include="isMatch.h" />
@@ -172,6 +173,7 @@
   <ItemGroup>
     <ClCompile Include="binaryWatch.cpp" />
     <ClCompile Include="constructRectangle.cpp" />
+    <ClCompile Include="firstMissingPositive.cpp" />
     <ClCompile Include="flattern.cpp" />
     <ClCompile Include="hasCycle.cpp" />
     <ClCompile Include="isHappy.cpp" />
